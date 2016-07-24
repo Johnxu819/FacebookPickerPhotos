@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCollectionViewCell" id="gTV-IL-0wX" customClass="photoCollectionViewCell" customModule="JFacebookPhotoPicker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0t5-9s-w4c">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture_select" translatesAutoresizingMaskIntoConstraints="NO" id="usI-j3-GS5">
+                        <rect key="frame" x="31" y="3" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="26" id="2WL-Iu-K15"/>
+                            <constraint firstAttribute="height" constant="26" id="ORl-Fh-zN7"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0V-XR-8dD">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                        <connections>
+                            <action selector="eventImageSelect:" destination="gTV-IL-0wX" eventType="touchUpInside" id="QGO-C0-oLq"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="i0V-XR-8dD" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="6eh-U1-EyO"/>
+                <constraint firstAttribute="trailing" secondItem="usI-j3-GS5" secondAttribute="trailing" constant="3" id="HTK-FL-HL3"/>
+                <constraint firstItem="usI-j3-GS5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="Rgj-46-7AI"/>
+                <constraint firstItem="i0V-XR-8dD" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="bqh-aC-6PD"/>
+                <constraint firstItem="0t5-9s-w4c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cb8-BU-tmf"/>
+                <constraint firstItem="i0V-XR-8dD" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="gGw-WB-wha"/>
+                <constraint firstAttribute="trailing" secondItem="0t5-9s-w4c" secondAttribute="trailing" id="gKx-M5-dDW"/>
+                <constraint firstItem="0t5-9s-w4c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iC5-vx-bCT"/>
+                <constraint firstAttribute="bottom" secondItem="0t5-9s-w4c" secondAttribute="bottom" id="jxu-Un-0Wv"/>
+                <constraint firstItem="i0V-XR-8dD" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="yj6-hw-7jp"/>
+            </constraints>
+            <size key="customSize" width="86" height="76"/>
+            <connections>
+                <outlet property="add_btn" destination="i0V-XR-8dD" id="EEK-fg-VKb"/>
+                <outlet property="thumbnail" destination="0t5-9s-w4c" id="bGQ-Di-1VT"/>
+            </connections>
+            <point key="canvasLocation" x="347" y="267"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="picture_select" width="27" height="27"/>
+    </resources>
+</document>

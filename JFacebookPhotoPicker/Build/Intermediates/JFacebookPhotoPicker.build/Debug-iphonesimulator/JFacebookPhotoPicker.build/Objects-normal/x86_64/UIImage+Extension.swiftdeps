@@ -1,0 +1,153 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["CSo7UIImage", ""]
+- ["CSo7UIImage", "resizeAndCropImage"]
+provides-dynamic-lookup:
+- "resizeAndCropImage"
+depends-top-level:
+- !private "*"
+- !private "/"
+- "UIImage"
+- !private "-"
+- !private "CGRectMake"
+- !private ">"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "UIGraphicsBeginImageContext"
+- !private "CGFloat"
+- "CGSize"
+depends-member:
+- !private ["Ps9AnyObject", "CGRectMake"]
+- !private ["Ps9AnyObject", "UIGraphicsBeginImageContext"]
+- !private ["Ps9AnyObject", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps9AnyObject", "drawInRect"]
+- ["Ps9AnyObject", "resizeAndCropImage"]
+- !private ["Ps9AnyObject", "size"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- !private ["Ps11CVarArgType", "CGRectMake"]
+- !private ["Ps11CVarArgType", "UIGraphicsBeginImageContext"]
+- !private ["Ps11CVarArgType", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps11CVarArgType", "drawInRect"]
+- ["Ps11CVarArgType", "resizeAndCropImage"]
+- !private ["Ps11CVarArgType", "size"]
+- !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
+- !private ["Ps28CustomDebugStringConvertible", "UIGraphicsBeginImageContext"]
+- !private ["Ps28CustomDebugStringConvertible", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps28CustomDebugStringConvertible", "drawInRect"]
+- ["Ps28CustomDebugStringConvertible", "resizeAndCropImage"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- !private ["Ps23CustomStringConvertible", "CGRectMake"]
+- !private ["Ps23CustomStringConvertible", "UIGraphicsBeginImageContext"]
+- !private ["Ps23CustomStringConvertible", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "drawInRect"]
+- ["Ps23CustomStringConvertible", "resizeAndCropImage"]
+- !private ["Ps23CustomStringConvertible", "size"]
+- !private ["Ps9Equatable", "CGRectMake"]
+- !private ["Ps9Equatable", "UIGraphicsBeginImageContext"]
+- !private ["Ps9Equatable", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "drawInRect"]
+- !private ["Ps9Equatable", "height"]
+- ["Ps9Equatable", "resizeAndCropImage"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "width"]
+- !private ["Ps8Hashable", "CGRectMake"]
+- !private ["Ps8Hashable", "UIGraphicsBeginImageContext"]
+- !private ["Ps8Hashable", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "drawInRect"]
+- ["Ps8Hashable", "resizeAndCropImage"]
+- !private ["Ps8Hashable", "size"]
+- !private ["PSo8NSCoding", "CGRectMake"]
+- !private ["PSo8NSCoding", "UIGraphicsBeginImageContext"]
+- !private ["PSo8NSCoding", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["PSo8NSCoding", "drawInRect"]
+- !private ["PSo8NSCoding", "size"]
+- !private ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "CGRectMake"]
+- ["CSo8NSObject", "CGSize"]
+- !private ["CSo8NSObject", "UIGraphicsBeginImageContext"]
+- !private ["CSo8NSObject", "UIGraphicsGetImageFromCurrentImageContext"]
+- ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "drawInRect"]
+- ["CSo8NSObject", "resizeAndCropImage"]
+- !private ["CSo8NSObject", "size"]
+- !private ["PSo16NSObjectProtocol", "CGRectMake"]
+- !private ["PSo16NSObjectProtocol", "UIGraphicsBeginImageContext"]
+- !private ["PSo16NSObjectProtocol", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["PSo16NSObjectProtocol", "drawInRect"]
+- ["PSo16NSObjectProtocol", "resizeAndCropImage"]
+- !private ["PSo16NSObjectProtocol", "size"]
+- !private ["PSo14NSSecureCoding", "CGRectMake"]
+- !private ["PSo14NSSecureCoding", "UIGraphicsBeginImageContext"]
+- !private ["PSo14NSSecureCoding", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["PSo14NSSecureCoding", "drawInRect"]
+- !private ["PSo14NSSecureCoding", "size"]
+- !private ["PSo29UIAccessibilityIdentification", "CGRectMake"]
+- !private ["PSo29UIAccessibilityIdentification", "UIGraphicsBeginImageContext"]
+- !private ["PSo29UIAccessibilityIdentification", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["PSo29UIAccessibilityIdentification", "drawInRect"]
+- !private ["PSo29UIAccessibilityIdentification", "size"]
+- !private ["CSo7UIImage", "CGFloat"]
+- !private ["CSo7UIImage", "CGRectMake"]
+- ["CSo7UIImage", "CGSize"]
+- !private ["CSo7UIImage", "UIGraphicsBeginImageContext"]
+- !private ["CSo7UIImage", "UIGraphicsGetImageFromCurrentImageContext"]
+- ["CSo7UIImage", "UIImage"]
+- !private ["CSo7UIImage", "drawInRect"]
+- ["CSo7UIImage", "resizeAndCropImage"]
+- !private ["CSo7UIImage", "size"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps24_ImageLiteralConvertible", "CGRectMake"]
+- !private ["Ps24_ImageLiteralConvertible", "UIGraphicsBeginImageContext"]
+- !private ["Ps24_ImageLiteralConvertible", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps24_ImageLiteralConvertible", "drawInRect"]
+- !private ["Ps24_ImageLiteralConvertible", "size"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "height"]
+- !private ["Ps12_Reflectable", "width"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGSize"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "PSo29UIAccessibilityIdentification"
+- "CSo7UIImage"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "86b040d7e58e9eccb86ab24beef2fdb4"

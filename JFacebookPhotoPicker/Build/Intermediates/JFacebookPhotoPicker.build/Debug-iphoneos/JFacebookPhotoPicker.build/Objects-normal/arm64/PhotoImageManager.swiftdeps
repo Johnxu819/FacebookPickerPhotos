@@ -1,0 +1,442 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PhotoImageManager"
+provides-nominal:
+- "C20JFacebookPhotoPicker17PhotoImageManager"
+provides-member:
+- ["C20JFacebookPhotoPicker17PhotoImageManager", ""]
+provides-dynamic-lookup:
+- "getPhotoByMaxSize"
+- "sharedManager"
+depends-top-level:
+- !private "UIScreen"
+- !private "instance"
+- !private "&&"
+- !private "/"
+- "NSObject"
+- "AnyObject"
+- !private "PHImageErrorKey"
+- "BooleanLiteralType"
+- !private "!="
+- !private "NSError"
+- !private ">"
+- !private "*"
+- !private "String"
+- !private "PHImageResultIsInCloudKey"
+- "PHObject"
+- !private "PhotoPickerConfig"
+- !private "Bool"
+- !private "PHImageRequestOptions"
+- "PHCachingImageManager"
+- "Void"
+- !private "=="
+- "UIImage"
+- !private "CGSizeMake"
+- !private "PHImageCancelledKey"
+- "CGFloat"
+- !private "PHAsset"
+- "PhotoImageManager"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "CGFloat"]
+- !private ["Ps9AnyObject", "CGSizeMake"]
+- !private ["Ps9AnyObject", "PHImageCancelledKey"]
+- !private ["Ps9AnyObject", "PHImageErrorKey"]
+- !private ["Ps9AnyObject", "PHImageRequestOptions"]
+- !private ["Ps9AnyObject", "PHImageResultIsInCloudKey"]
+- ["Ps9AnyObject", "PhotoImageManager"]
+- !private ["Ps9AnyObject", "PhotoPickerConfig"]
+- !private ["Ps9AnyObject", "PreviewImageMaxFetchMaxWidth"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UIScreen"]
+- ["Ps9AnyObject", "getPhotoByMaxSize"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "mainScreen"]
+- !private ["Ps9AnyObject", "networkAccessAllowed"]
+- !private ["Ps9AnyObject", "pixelHeight"]
+- !private ["Ps9AnyObject", "pixelWidth"]
+- !private ["Ps9AnyObject", "requestImageDataForAsset"]
+- !private ["Ps9AnyObject", "requestImageForAsset"]
+- !private ["Ps9AnyObject", "scale"]
+- ["Ps9AnyObject", "sharedManager"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["Ps11CVarArgType", "CGFloat"]
+- !private ["Ps11CVarArgType", "CGSizeMake"]
+- !private ["Ps11CVarArgType", "PHImageCancelledKey"]
+- !private ["Ps11CVarArgType", "PHImageErrorKey"]
+- !private ["Ps11CVarArgType", "PHImageRequestOptions"]
+- !private ["Ps11CVarArgType", "PHImageResultIsInCloudKey"]
+- ["Ps11CVarArgType", "PhotoImageManager"]
+- !private ["Ps11CVarArgType", "PhotoPickerConfig"]
+- !private ["Ps11CVarArgType", "UIImage"]
+- !private ["Ps11CVarArgType", "UIScreen"]
+- ["Ps11CVarArgType", "getPhotoByMaxSize"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "mainScreen"]
+- !private ["Ps11CVarArgType", "networkAccessAllowed"]
+- !private ["Ps11CVarArgType", "pixelHeight"]
+- !private ["Ps11CVarArgType", "pixelWidth"]
+- !private ["Ps11CVarArgType", "requestImageDataForAsset"]
+- !private ["Ps11CVarArgType", "requestImageForAsset"]
+- !private ["Ps11CVarArgType", "scale"]
+- ["Ps11CVarArgType", "sharedManager"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- !private ["Ps28CustomDebugStringConvertible", "CGSizeMake"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "PHImageCancelledKey"]
+- !private ["Ps28CustomDebugStringConvertible", "PHImageErrorKey"]
+- !private ["Ps28CustomDebugStringConvertible", "PHImageRequestOptions"]
+- !private ["Ps28CustomDebugStringConvertible", "PHImageResultIsInCloudKey"]
+- ["Ps28CustomDebugStringConvertible", "PhotoImageManager"]
+- !private ["Ps28CustomDebugStringConvertible", "PhotoPickerConfig"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "UIScreen"]
+- ["Ps28CustomDebugStringConvertible", "getPhotoByMaxSize"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "mainScreen"]
+- !private ["Ps28CustomDebugStringConvertible", "networkAccessAllowed"]
+- !private ["Ps28CustomDebugStringConvertible", "pixelHeight"]
+- !private ["Ps28CustomDebugStringConvertible", "pixelWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "requestImageDataForAsset"]
+- !private ["Ps28CustomDebugStringConvertible", "requestImageForAsset"]
+- !private ["Ps28CustomDebugStringConvertible", "scale"]
+- ["Ps28CustomDebugStringConvertible", "sharedManager"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "CGFloat"]
+- !private ["Ps23CustomStringConvertible", "CGSizeMake"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "PHImageCancelledKey"]
+- !private ["Ps23CustomStringConvertible", "PHImageErrorKey"]
+- !private ["Ps23CustomStringConvertible", "PHImageRequestOptions"]
+- !private ["Ps23CustomStringConvertible", "PHImageResultIsInCloudKey"]
+- ["Ps23CustomStringConvertible", "PhotoImageManager"]
+- !private ["Ps23CustomStringConvertible", "PhotoPickerConfig"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "UIScreen"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "getPhotoByMaxSize"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "mainScreen"]
+- !private ["Ps23CustomStringConvertible", "networkAccessAllowed"]
+- !private ["Ps23CustomStringConvertible", "pixelHeight"]
+- !private ["Ps23CustomStringConvertible", "pixelWidth"]
+- !private ["Ps23CustomStringConvertible", "requestImageDataForAsset"]
+- !private ["Ps23CustomStringConvertible", "requestImageForAsset"]
+- !private ["Ps23CustomStringConvertible", "scale"]
+- ["Ps23CustomStringConvertible", "sharedManager"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps28DictionaryLiteralConvertible", "Index"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Ps9Equatable", "AspectFit"]
+- !private ["Ps9Equatable", "CGFloat"]
+- !private ["Ps9Equatable", "CGSizeMake"]
+- !private ["Ps9Equatable", "PHImageCancelledKey"]
+- !private ["Ps9Equatable", "PHImageErrorKey"]
+- !private ["Ps9Equatable", "PHImageRequestOptions"]
+- !private ["Ps9Equatable", "PHImageResultIsInCloudKey"]
+- ["Ps9Equatable", "PhotoImageManager"]
+- !private ["Ps9Equatable", "PhotoPickerConfig"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "UIScreen"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "getPhotoByMaxSize"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "mainScreen"]
+- !private ["Ps9Equatable", "networkAccessAllowed"]
+- !private ["Ps9Equatable", "pixelHeight"]
+- !private ["Ps9Equatable", "pixelWidth"]
+- !private ["Ps9Equatable", "requestImageDataForAsset"]
+- !private ["Ps9Equatable", "requestImageForAsset"]
+- !private ["Ps9Equatable", "scale"]
+- ["Ps9Equatable", "sharedManager"]
+- ["Ps9Equatable", ""]
+- !private ["Ps23FloatLiteralConvertible", "init"]
+- !private ["Ps17FloatingPointType", "init"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "AspectFit"]
+- !private ["Ps8Hashable", "CGFloat"]
+- !private ["Ps8Hashable", "CGSizeMake"]
+- !private ["Ps8Hashable", "PHImageCancelledKey"]
+- !private ["Ps8Hashable", "PHImageErrorKey"]
+- !private ["Ps8Hashable", "PHImageRequestOptions"]
+- !private ["Ps8Hashable", "PHImageResultIsInCloudKey"]
+- ["Ps8Hashable", "PhotoImageManager"]
+- !private ["Ps8Hashable", "PhotoPickerConfig"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "UIScreen"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "getPhotoByMaxSize"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "mainScreen"]
+- !private ["Ps8Hashable", "networkAccessAllowed"]
+- !private ["Ps8Hashable", "pixelHeight"]
+- !private ["Ps8Hashable", "pixelWidth"]
+- !private ["Ps8Hashable", "requestImageDataForAsset"]
+- !private ["Ps8Hashable", "requestImageForAsset"]
+- !private ["Ps8Hashable", "scale"]
+- ["Ps8Hashable", "sharedManager"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "networkAccessAllowed"]
+- !private ["PSo9NSCopying", "pixelHeight"]
+- !private ["PSo9NSCopying", "pixelWidth"]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "CGSizeMake"]
+- !private ["CSo8NSObject", "NSError"]
+- ["CSo8NSObject", "NSObject"]
+- !private ["CSo8NSObject", "PHAsset"]
+- !private ["CSo8NSObject", "PHImageCancelledKey"]
+- !private ["CSo8NSObject", "PHImageErrorKey"]
+- !private ["CSo8NSObject", "PHImageRequestOptions"]
+- !private ["CSo8NSObject", "PHImageResultIsInCloudKey"]
+- ["CSo8NSObject", "PHObject"]
+- ["CSo8NSObject", "PhotoImageManager"]
+- !private ["CSo8NSObject", "PhotoPickerConfig"]
+- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "UIScreen"]
+- ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "getPhotoByMaxSize"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "mainScreen"]
+- !private ["CSo8NSObject", "networkAccessAllowed"]
+- !private ["CSo8NSObject", "pixelHeight"]
+- !private ["CSo8NSObject", "pixelWidth"]
+- !private ["CSo8NSObject", "requestImageDataForAsset"]
+- !private ["CSo8NSObject", "requestImageForAsset"]
+- !private ["CSo8NSObject", "scale"]
+- ["CSo8NSObject", "sharedManager"]
+- !private ["PSo16NSObjectProtocol", "CGFloat"]
+- !private ["PSo16NSObjectProtocol", "CGSizeMake"]
+- !private ["PSo16NSObjectProtocol", "PHImageCancelledKey"]
+- !private ["PSo16NSObjectProtocol", "PHImageErrorKey"]
+- !private ["PSo16NSObjectProtocol", "PHImageRequestOptions"]
+- !private ["PSo16NSObjectProtocol", "PHImageResultIsInCloudKey"]
+- ["PSo16NSObjectProtocol", "PhotoImageManager"]
+- !private ["PSo16NSObjectProtocol", "PhotoPickerConfig"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UIScreen"]
+- ["PSo16NSObjectProtocol", "getPhotoByMaxSize"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "mainScreen"]
+- !private ["PSo16NSObjectProtocol", "networkAccessAllowed"]
+- !private ["PSo16NSObjectProtocol", "pixelHeight"]
+- !private ["PSo16NSObjectProtocol", "pixelWidth"]
+- !private ["PSo16NSObjectProtocol", "requestImageDataForAsset"]
+- !private ["PSo16NSObjectProtocol", "requestImageForAsset"]
+- !private ["PSo16NSObjectProtocol", "scale"]
+- ["PSo16NSObjectProtocol", "sharedManager"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["CSo7PHAsset", "pixelHeight"]
+- !private ["CSo7PHAsset", "pixelWidth"]
+- ["CSo21PHCachingImageManager", "AnyObject"]
+- !private ["CSo21PHCachingImageManager", "Bool"]
+- ["CSo21PHCachingImageManager", "CGFloat"]
+- !private ["CSo21PHCachingImageManager", "CGSizeMake"]
+- !private ["CSo21PHCachingImageManager", "NSError"]
+- ["CSo21PHCachingImageManager", "NSObject"]
+- !private ["CSo21PHCachingImageManager", "PHAsset"]
+- !private ["CSo21PHCachingImageManager", "PHImageCancelledKey"]
+- !private ["CSo21PHCachingImageManager", "PHImageErrorKey"]
+- !private ["CSo21PHCachingImageManager", "PHImageRequestOptions"]
+- !private ["CSo21PHCachingImageManager", "PHImageResultIsInCloudKey"]
+- ["CSo21PHCachingImageManager", "PHObject"]
+- ["CSo21PHCachingImageManager", "PhotoImageManager"]
+- !private ["CSo21PHCachingImageManager", "PhotoPickerConfig"]
+- !private ["CSo21PHCachingImageManager", "String"]
+- ["CSo21PHCachingImageManager", "UIImage"]
+- !private ["CSo21PHCachingImageManager", "UIScreen"]
+- ["CSo21PHCachingImageManager", "Void"]
+- ["CSo21PHCachingImageManager", "getPhotoByMaxSize"]
+- ["CSo21PHCachingImageManager", "init"]
+- !private ["CSo21PHCachingImageManager", "requestImageDataForAsset"]
+- !private ["CSo21PHCachingImageManager", "requestImageForAsset"]
+- ["CSo21PHCachingImageManager", "sharedManager"]
+- ["CSo21PHCachingImageManager", ""]
+- !private ["OSC18PHImageContentMode", "AspectFit"]
+- ["CSo14PHImageManager", "AnyObject"]
+- !private ["CSo14PHImageManager", "Bool"]
+- ["CSo14PHImageManager", "CGFloat"]
+- !private ["CSo14PHImageManager", "CGSizeMake"]
+- !private ["CSo14PHImageManager", "NSError"]
+- ["CSo14PHImageManager", "NSObject"]
+- !private ["CSo14PHImageManager", "PHAsset"]
+- !private ["CSo14PHImageManager", "PHImageCancelledKey"]
+- !private ["CSo14PHImageManager", "PHImageErrorKey"]
+- !private ["CSo14PHImageManager", "PHImageRequestOptions"]
+- !private ["CSo14PHImageManager", "PHImageResultIsInCloudKey"]
+- ["CSo14PHImageManager", "PHObject"]
+- ["CSo14PHImageManager", "PhotoImageManager"]
+- !private ["CSo14PHImageManager", "PhotoPickerConfig"]
+- !private ["CSo14PHImageManager", "String"]
+- ["CSo14PHImageManager", "UIImage"]
+- !private ["CSo14PHImageManager", "UIScreen"]
+- ["CSo14PHImageManager", "Void"]
+- ["CSo14PHImageManager", "getPhotoByMaxSize"]
+- ["CSo14PHImageManager", "init"]
+- !private ["CSo14PHImageManager", "requestImageDataForAsset"]
+- !private ["CSo14PHImageManager", "requestImageForAsset"]
+- ["CSo14PHImageManager", "sharedManager"]
+- !private ["CSo21PHImageRequestOptions", "init"]
+- !private ["CSo21PHImageRequestOptions", "networkAccessAllowed"]
+- !private ["CSo8PHObject", "deinit"]
+- !private ["CSo8PHObject", "pixelHeight"]
+- !private ["CSo8PHObject", "pixelWidth"]
+- ["C20JFacebookPhotoPicker17PhotoImageManager", "AnyObject"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "Bool"]
+- ["C20JFacebookPhotoPicker17PhotoImageManager", "CGFloat"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "CGSizeMake"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "NSError"]
+- ["C20JFacebookPhotoPicker17PhotoImageManager", "NSObject"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "PHAsset"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "PHImageCancelledKey"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "PHImageErrorKey"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "PHImageRequestOptions"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "PHImageResultIsInCloudKey"]
+- ["C20JFacebookPhotoPicker17PhotoImageManager", "PHObject"]
+- ["C20JFacebookPhotoPicker17PhotoImageManager", "PhotoImageManager"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "PhotoPickerConfig"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "String"]
+- ["C20JFacebookPhotoPicker17PhotoImageManager", "UIImage"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "UIScreen"]
+- ["C20JFacebookPhotoPicker17PhotoImageManager", "Void"]
+- ["C20JFacebookPhotoPicker17PhotoImageManager", "deinit"]
+- ["C20JFacebookPhotoPicker17PhotoImageManager", "getPhotoByMaxSize"]
+- ["C20JFacebookPhotoPicker17PhotoImageManager", "init"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "requestImageDataForAsset"]
+- !private ["C20JFacebookPhotoPicker17PhotoImageManager", "requestImageForAsset"]
+- ["C20JFacebookPhotoPicker17PhotoImageManager", "sharedManager"]
+- !private ["C20JFacebookPhotoPicker17PhotoPickerConfig", "PreviewImageMaxFetchMaxWidth"]
+- !private ["Ps16RawRepresentable", "AspectFit"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps16SignedNumberType", "init"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Strideable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo8UIScreen", "mainScreen"]
+- !private ["CSo8UIScreen", "scale"]
+- !private ["PSo18UITraitEnvironment", "mainScreen"]
+- !private ["PSo18UITraitEnvironment", "scale"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps19_CVarArgAlignedType", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "Index"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "subscript"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "V12CoreGraphics7CGFloat"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- "Ps9Equatable"
+- !private "Ps23FloatLiteralConvertible"
+- !private "Ps17FloatingPointType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "CSo7PHAsset"
+- "CSo21PHCachingImageManager"
+- !private "OSC18PHImageContentMode"
+- "CSo14PHImageManager"
+- !private "CSo21PHImageRequestOptions"
+- !private "CSo8PHObject"
+- "C20JFacebookPhotoPicker17PhotoImageManager"
+- !private "C20JFacebookPhotoPicker17PhotoPickerConfig"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps16SignedNumberType"
+- !private "Vs5Slice"
+- !private "Ps10Strideable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo7UIImage"
+- !private "CSo8UIScreen"
+- !private "PSo18UITraitEnvironment"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps19_CVarArgAlignedType"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+interface-hash: "774158ce6bc5c59760b554e7d7338f4b"

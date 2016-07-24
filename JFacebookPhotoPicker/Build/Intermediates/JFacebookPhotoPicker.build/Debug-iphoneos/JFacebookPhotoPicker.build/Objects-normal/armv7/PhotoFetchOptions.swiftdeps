@@ -1,0 +1,192 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PhotoFetchOptions"
+provides-nominal:
+- "C20JFacebookPhotoPicker17PhotoFetchOptions"
+provides-member:
+- ["C20JFacebookPhotoPicker17PhotoFetchOptions", ""]
+provides-dynamic-lookup:
+- "shareInstance"
+depends-top-level:
+- !private "PHAssetMediaType"
+- !private "BooleanLiteralType"
+- !private "Array"
+- !private "NSSortDescriptor"
+- "PHFetchOptions"
+- "PhotoFetchOptions"
+- !private "StringLiteralType"
+- !private "NSPredicate"
+depends-member:
+- !private ["Ps9AnyObject", "NSPredicate"]
+- !private ["Ps9AnyObject", "NSSortDescriptor"]
+- !private ["Ps9AnyObject", "PHAssetMediaType"]
+- ["Ps9AnyObject", "PhotoFetchOptions"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "predicate"]
+- ["Ps9AnyObject", "shareInstance"]
+- !private ["Ps9AnyObject", "sortDescriptors"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps11CVarArgType", "NSPredicate"]
+- !private ["Ps11CVarArgType", "NSSortDescriptor"]
+- !private ["Ps11CVarArgType", "PHAssetMediaType"]
+- ["Ps11CVarArgType", "PhotoFetchOptions"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "predicate"]
+- ["Ps11CVarArgType", "shareInstance"]
+- !private ["Ps11CVarArgType", "sortDescriptors"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "NSPredicate"]
+- !private ["Ps28CustomDebugStringConvertible", "NSSortDescriptor"]
+- !private ["Ps28CustomDebugStringConvertible", "PHAssetMediaType"]
+- ["Ps28CustomDebugStringConvertible", "PhotoFetchOptions"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "predicate"]
+- ["Ps28CustomDebugStringConvertible", "shareInstance"]
+- !private ["Ps28CustomDebugStringConvertible", "sortDescriptors"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "NSPredicate"]
+- !private ["Ps23CustomStringConvertible", "NSSortDescriptor"]
+- !private ["Ps23CustomStringConvertible", "PHAssetMediaType"]
+- ["Ps23CustomStringConvertible", "PhotoFetchOptions"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "predicate"]
+- ["Ps23CustomStringConvertible", "shareInstance"]
+- !private ["Ps23CustomStringConvertible", "sortDescriptors"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Image"]
+- !private ["Ps9Equatable", "NSPredicate"]
+- !private ["Ps9Equatable", "NSSortDescriptor"]
+- !private ["Ps9Equatable", "PHAssetMediaType"]
+- ["Ps9Equatable", "PhotoFetchOptions"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "predicate"]
+- !private ["Ps9Equatable", "rawValue"]
+- ["Ps9Equatable", "shareInstance"]
+- !private ["Ps9Equatable", "sortDescriptors"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "Image"]
+- !private ["Ps8Hashable", "NSPredicate"]
+- !private ["Ps8Hashable", "NSSortDescriptor"]
+- !private ["Ps8Hashable", "PHAssetMediaType"]
+- ["Ps8Hashable", "PhotoFetchOptions"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "predicate"]
+- !private ["Ps8Hashable", "rawValue"]
+- ["Ps8Hashable", "shareInstance"]
+- !private ["Ps8Hashable", "sortDescriptors"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "NSPredicate"]
+- !private ["PSo9NSCopying", "NSSortDescriptor"]
+- !private ["PSo9NSCopying", "PHAssetMediaType"]
+- ["PSo9NSCopying", "PhotoFetchOptions"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "predicate"]
+- ["PSo9NSCopying", "shareInstance"]
+- !private ["PSo9NSCopying", "sortDescriptors"]
+- ["PSo9NSCopying", ""]
+- !private ["CSo8NSObject", "NSPredicate"]
+- !private ["CSo8NSObject", "NSSortDescriptor"]
+- !private ["CSo8NSObject", "PHAssetMediaType"]
+- ["CSo8NSObject", "PhotoFetchOptions"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "predicate"]
+- ["CSo8NSObject", "shareInstance"]
+- !private ["CSo8NSObject", "sortDescriptors"]
+- !private ["PSo16NSObjectProtocol", "NSPredicate"]
+- !private ["PSo16NSObjectProtocol", "NSSortDescriptor"]
+- !private ["PSo16NSObjectProtocol", "PHAssetMediaType"]
+- ["PSo16NSObjectProtocol", "PhotoFetchOptions"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "predicate"]
+- ["PSo16NSObjectProtocol", "shareInstance"]
+- !private ["PSo16NSObjectProtocol", "sortDescriptors"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo11NSPredicate", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo16NSSortDescriptor", "init"]
+- !private ["Sq", "deinit"]
+- !private ["OSC16PHAssetMediaType", "Image"]
+- !private ["OSC16PHAssetMediaType", "rawValue"]
+- !private ["CSo14PHFetchOptions", "NSPredicate"]
+- !private ["CSo14PHFetchOptions", "NSSortDescriptor"]
+- !private ["CSo14PHFetchOptions", "PHAssetMediaType"]
+- ["CSo14PHFetchOptions", "PhotoFetchOptions"]
+- ["CSo14PHFetchOptions", "init"]
+- !private ["CSo14PHFetchOptions", "predicate"]
+- ["CSo14PHFetchOptions", "shareInstance"]
+- !private ["CSo14PHFetchOptions", "sortDescriptors"]
+- ["CSo14PHFetchOptions", ""]
+- !private ["C20JFacebookPhotoPicker17PhotoFetchOptions", "NSPredicate"]
+- !private ["C20JFacebookPhotoPicker17PhotoFetchOptions", "NSSortDescriptor"]
+- !private ["C20JFacebookPhotoPicker17PhotoFetchOptions", "PHAssetMediaType"]
+- ["C20JFacebookPhotoPicker17PhotoFetchOptions", "PhotoFetchOptions"]
+- ["C20JFacebookPhotoPicker17PhotoFetchOptions", "deinit"]
+- ["C20JFacebookPhotoPicker17PhotoFetchOptions", "init"]
+- !private ["C20JFacebookPhotoPicker17PhotoFetchOptions", "predicate"]
+- ["C20JFacebookPhotoPicker17PhotoFetchOptions", "shareInstance"]
+- !private ["C20JFacebookPhotoPicker17PhotoFetchOptions", "sortDescriptors"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps16RawRepresentable", "Image"]
+- !private ["Ps16RawRepresentable", "rawValue"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps12_Reflectable", "Element"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo11NSPredicate"
+- !private "PSo14NSSecureCoding"
+- !private "CSo16NSSortDescriptor"
+- !private "Sq"
+- !private "OSC16PHAssetMediaType"
+- "CSo14PHFetchOptions"
+- "C20JFacebookPhotoPicker17PhotoFetchOptions"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps10_ArrayType"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+interface-hash: "c85710b67f12102bf81adc9adf95fa96"
