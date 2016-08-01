@@ -7,11 +7,11 @@ provides-member:
 provides-dynamic-lookup:
 - "aapl_indexPathsForElementsInRect"
 depends-top-level:
-- !private "=="
 - !private "||"
+- "NSIndexPath"
 - "UICollectionView"
 - "CGRect"
-- "NSIndexPath"
+- !private "=="
 depends-member:
 - !private ["Ps9AnyObject", "NSIndexPath"]
 - ["Ps9AnyObject", "aapl_indexPathsForElementsInRect"]

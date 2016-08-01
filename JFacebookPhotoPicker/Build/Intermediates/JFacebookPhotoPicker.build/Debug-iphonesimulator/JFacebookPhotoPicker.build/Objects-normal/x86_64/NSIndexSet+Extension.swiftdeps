@@ -7,8 +7,8 @@ provides-member:
 provides-dynamic-lookup:
 - "aapl_indexPathsFromIndexesWithSection"
 depends-top-level:
-- !private "Void"
 - "NSIndexSet"
+- !private "Void"
 - "NSIndexPath"
 - "Int"
 depends-member:

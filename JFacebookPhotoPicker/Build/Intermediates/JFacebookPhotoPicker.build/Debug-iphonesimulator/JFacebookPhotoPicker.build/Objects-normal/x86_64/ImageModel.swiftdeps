@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "ImageModel"
-- "String"
 - "PHAssetCollectionSubtype"
+- "String"
 - "PHFetchResult"
 depends-member:
 - ["V20JFacebookPhotoPicker10ImageModel", "PHAssetCollectionSubtype"]

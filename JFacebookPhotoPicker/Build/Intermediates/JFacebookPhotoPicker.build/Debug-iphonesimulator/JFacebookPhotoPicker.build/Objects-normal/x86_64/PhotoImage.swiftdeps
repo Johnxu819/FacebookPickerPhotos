@@ -7,8 +7,8 @@ provides-member:
 - ["C20JFacebookPhotoPicker10PhotoImage", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "PhotoImage"
 - "PHAsset"
+- "PhotoImage"
 depends-member:
 - ["Ps9AnyObject", "PHAsset"]
 - ["Ps9AnyObject", "PhotoImage"]

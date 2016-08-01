@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C20JFacebookPhotoPicker11AppDelegate", ""]
 provides-dynamic-lookup:
-- "application"
-- "applicationWillTerminate"
-- "applicationDidEnterBackground"
-- "applicationDidBecomeActive"
 - "applicationWillEnterForeground"
-- "window"
+- "applicationDidEnterBackground"
+- "applicationWillTerminate"
+- "application"
 - "applicationWillResignActive"
+- "applicationDidBecomeActive"
+- "window"
 depends-top-level:
-- "Bool"
-- "AnyObject"
-- "NSObject"
 - !private "BooleanLiteralType"
+- "AppDelegate"
 - "UIWindow"
 - "UIApplicationDelegate"
 - "UIResponder"
 - "UIApplication"
-- "AppDelegate"
+- "AnyObject"
+- "Bool"
+- "NSObject"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]

@@ -27,6 +27,29 @@ class PhotoPreviewViewController: UIViewController,UICollectionViewDataSource,UI
         super.viewDidLoad()
         self.configCollectionView()
         self.configToolbar()
+        self.styleNavBar()
+    }
+    
+    private func styleNavBar() {
+        self.navigationController!.navigationBar.barTintColor=UIColor.whiteColor().colorWithAlphaComponent(1)
+        
+        let navigationTitleAttribute: NSDictionary = NSDictionary(object: UIColor.blackColor(), forKey: NSForegroundColorAttributeName)
+        self.navigationController!.navigationBar.titleTextAttributes = navigationTitleAttribute as? [String : AnyObject]
+        
+        let left_button=UIButton(frame: CGRect(origin: CGPoint(x: 0,y: 0), size: CGSize(width: 32,height: 32)))
+        left_button.setImage(UIImage(named:"ic_keyboard_arrow_left"), forState: UIControlState.Normal)
+        left_button.addTarget(self,action:#selector(PhotoCollectionViewController.eventCancel),forControlEvents:.TouchUpInside)
+        
+        let leftBarButton = UIBarButtonItem()
+        leftBarButton.customView = left_button
+        self.navigationItem.leftBarButtonItem = leftBarButton
+    }
+    
+    // MARK: -  cancel
+    func eventCancel(){
+        // print("eventCancel")
+        PhotoImage.instance.selectedImage.removeAll()
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     private func configToolbar(){
@@ -35,7 +58,6 @@ class PhotoPreviewViewController: UIViewController,UICollectionViewDataSource,UI
         self.toolbar?.sourceDelegate = self
         self.view.addSubview(toolbar!)
     }
-    
     
     // MARK: -  from page delegate 
     func onToolbarBackArrowClicked() {
@@ -61,7 +83,7 @@ class PhotoPreviewViewController: UIViewController,UICollectionViewDataSource,UI
         super.viewWillAppear(animated)
         
         // fullscreen controller
-        self.navigationController?.navigationBarHidden = true
+        //self.navigationController?.navigationBarHidden = true
         //UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .None)
         
         self.collectionView?.setContentOffset(CGPointMake(CGFloat(self.currentPage) * self.view.bounds.width, 0), animated: false)

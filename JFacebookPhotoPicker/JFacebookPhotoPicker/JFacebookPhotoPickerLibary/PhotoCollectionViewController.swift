@@ -54,11 +54,12 @@ class PhotoCollectionViewController: UICollectionViewController, PHPhotoLibraryC
     var newNavBar:UINavigationBar?
     
     
-	override func viewDidLoad() {
+	override func viewDidLoad()
+    {
 		super.viewDidLoad()
         
         let originFrame = self.collectionView!.frame
-        self.collectionView!.frame = CGRectMake(originFrame.origin.x, originFrame.origin.y+44, originFrame.size.width, originFrame.height-44)
+        self.collectionView!.frame = CGRectMake(originFrame.origin.x, originFrame.origin.y, originFrame.size.width, originFrame.height)
 
         self.configPhotoObserver()
         
@@ -101,46 +102,35 @@ class PhotoCollectionViewController: UICollectionViewController, PHPhotoLibraryC
         albumsTableView?.photoCollectionViewController=self
         albumsTableView?.hidden=true
     }
+
     
     private func styleNavBar() {
-    self.navigationController?.setNavigationBarHidden(true, animated: false)
-   
-    if(newNavBar == nil){
-    newNavBar = UINavigationBar(frame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 64.0))
-        newNavBar!.tintColor=UIColor.blackColor()
-        
-    let newItem = UINavigationItem()
-    newItem.title = "Paths"
-        
-    let titleView=UILabel()
-    let width = self.view.frame.width/2
-    titleView.frame=CGRect(x: width-50, y: 0, width: 100, height: 50)
-    titleView.backgroundColor=UIColor.clearColor()
-    titleView.textColor=UIColor.blackColor()
-    titleView.font=UIFont.boldSystemFontOfSize(16)
-    titleView.text=PhotoPickerConfig.ClickSelectAllbum
-    titleView.userInteractionEnabled=true
-    newItem.titleView=titleView
-        
-    let backButtonImage = UIImage(named: "ic_keyboard_arrow_left")
-    let backBarButtonItem = UIBarButtonItem(image: backButtonImage, style: .Plain, target: self, action: #selector(PhotoCollectionViewController.eventCancel))
-    newItem.leftBarButtonItem = backBarButtonItem
+        //self.title="选择相册"
 
-    let rightBarButtonItem = UIBarButtonItem(title: "完成", style: .Plain, target: self, action: #selector(PhotoCollectionViewController.doneClick))
-    newItem.rightBarButtonItem = rightBarButtonItem
+        self.navigationController!.navigationBar.barTintColor=UIColor.whiteColor().colorWithAlphaComponent(1)
         
-    newNavBar!.setItems([newItem], animated: false)
+        let navigationTitleAttribute: NSDictionary = NSDictionary(object: UIColor.blackColor(), forKey: NSForegroundColorAttributeName)
+        self.navigationController!.navigationBar.titleTextAttributes = navigationTitleAttribute as? [String : AnyObject]
         
-    let gestureFollow = UITapGestureRecognizer(target: self, action: #selector(showAlbumsList(_:)))
-        gestureFollow.numberOfTapsRequired = 1
+        let left_button=UIButton(frame: CGRect(origin: CGPoint(x: 0,y: 0), size: CGSize(width: 32,height: 32)))
+        left_button.setImage(UIImage(named:"ic_keyboard_arrow_left"), forState: UIControlState.Normal)
+        left_button.addTarget(self,action:#selector(PhotoCollectionViewController.eventCancel),forControlEvents:.TouchUpInside)
         
+        let leftBarButton = UIBarButtonItem()
+        leftBarButton.customView = left_button
+        self.navigationItem.leftBarButtonItem = leftBarButton
         
-    let subviews = newNavBar!.subviews
-    subviews[1].addGestureRecognizer(gestureFollow)
-    subviews[1].backgroundColor=UIColor.clearColor()
+        let rightBarButtonItem = UIBarButtonItem(title: "完成", style: .Plain, target: self, action: #selector(PhotoCollectionViewController.doneClick))
+        rightBarButtonItem.tintColor=UIColor.blackColor()
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
         
-    self.view.addSubview(newNavBar!)
-    }
+        let button =  UIButton(type: .Custom)
+        button.frame = CGRectMake(0, 0, 100, 40) as CGRect
+        button.tintColor=UIColor.blackColor()
+        button.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        button.setTitle("选择相册", forState: UIControlState.Normal)
+        button.addTarget(self, action: #selector(PhotoCollectionViewController.allbumClcik), forControlEvents: UIControlEvents.TouchUpInside)
+        self.navigationItem.titleView = button
     }
     
     func configPhotoObserver()  {
@@ -157,6 +147,7 @@ class PhotoCollectionViewController: UICollectionViewController, PHPhotoLibraryC
     // MARK: -  allbumClcik
     func allbumClcik(){
        // print("allbumClcik")
+        self.switchAlbums()
     }
     
     // MARK: -  cancel
@@ -445,29 +436,26 @@ class PhotoCollectionViewController: UICollectionViewController, PHPhotoLibraryC
         }
     }
     
-    
-    func showAlbumsList(gestureRecognizer:UIGestureRecognizer)  {
-        self.switchAlbums()
-
-   }
  
    func  switchAlbums() {
-    if((albumsTableView?.hidden)==true){
-        self.albumsTableView!.frame.origin = CGPointMake(0, -100)
-        print("x:\(self.albumsTableView!.frame.origin.x) y:\(self.albumsTableView!.frame.origin.y)")
+    if((albumsTableView?.hidden)==true)
+    {
+        self.albumsTableView!.frame.origin = CGPointMake(0, 34)
         
-        UIView.animateWithDuration(0.5, animations: { () -> Void in
-            self.albumsTableView!.frame.origin =  CGPointMake(0,24)
-            }, completion: { (isFinished) -> Void in
-                self.albumsTableView?.hidden=false
-        })
+        UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 1, initialSpringVelocity: 10, options: UIViewAnimationOptions.AllowAnimatedContent, animations: {
+            
+        }) { (finished: Bool) in
+            self.albumsTableView?.hidden=false
+        }
         
+//        UIView.animateWithDuration(1, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.albumsTableView!.center.x = self.view.bounds.width - self.albumsTableView!.center.x
+//            }, completion: {(Bool) -> Void in
+//                self.albumsTableView?.hidden=false
+//          })
     }else{
-        UIView.animateWithDuration(1.5, delay: 0, options: [UIViewAnimationOptions.CurveEaseOut], animations: { () -> Void in
-            self.albumsTableView!.frame.origin = CGPointMake(0, -self.albumsTableView!.frame.height)
-            }, completion: { (isFinished) -> Void in
-                self.albumsTableView?.hidden=true
-        })
+        self.albumsTableView?.hidden=true
+
     }
     }
  }

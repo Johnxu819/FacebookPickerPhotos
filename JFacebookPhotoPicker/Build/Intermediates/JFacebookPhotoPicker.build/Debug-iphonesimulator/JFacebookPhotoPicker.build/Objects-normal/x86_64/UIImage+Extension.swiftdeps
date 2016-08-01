@@ -7,16 +7,16 @@ provides-member:
 provides-dynamic-lookup:
 - "resizeAndCropImage"
 depends-top-level:
-- !private "*"
-- !private "/"
+- "CGSize"
 - "UIImage"
-- !private "-"
-- !private "CGRectMake"
+- !private "UIGraphicsBeginImageContext"
 - !private ">"
 - !private "UIGraphicsGetImageFromCurrentImageContext"
-- !private "UIGraphicsBeginImageContext"
 - !private "CGFloat"
-- "CGSize"
+- !private "CGRectMake"
+- !private "-"
+- !private "*"
+- !private "/"
 depends-member:
 - !private ["Ps9AnyObject", "CGRectMake"]
 - !private ["Ps9AnyObject", "UIGraphicsBeginImageContext"]

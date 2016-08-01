@@ -7,11 +7,11 @@ provides-member:
 - ["C20JFacebookPhotoPicker17PhotoPickerConfig", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "PhotoPickerConfig"
 - "StringLiteralType"
-- "CGFloat"
 - "/"
 - "UIColor"
+- "PhotoPickerConfig"
+- "CGFloat"
 depends-member:
 - ["Ps9AnyObject", "UIColor"]
 - ["Ps9AnyObject", "init"]

@@ -132,6 +132,19 @@ SWIFT_CLASS("_TtC20JFacebookPhotoPicker11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+@class UIImage;
+
+SWIFT_CLASS("_TtC20JFacebookPhotoPicker15MCollectionCell")
+@interface MCollectionCell : UICollectionViewCell
+@property (nonatomic, strong) UIImageView * _Nullable imageView;
+@property (nonatomic, strong) UILabel * _Nullable imageLabel;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)setImage:(UIImage * _Nonnull)image index:(NSInteger)index;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSIndexPath;
 
 @interface NSIndexSet (SWIFT_EXTENSION(JFacebookPhotoPicker))
@@ -139,7 +152,6 @@ SWIFT_CLASS("_TtC20JFacebookPhotoPicker11AppDelegate")
 @end
 
 @class PHFetchResult;
-@class UIImageView;
 
 SWIFT_CLASS("_TtC20JFacebookPhotoPicker23PhotoAlbumTableViewCell")
 @interface PhotoAlbumTableViewCell : UITableViewCell
@@ -182,10 +194,7 @@ SWIFT_CLASS("_TtC20JFacebookPhotoPicker20PhotoAlbumsTableView")
 @class UICollectionViewLayout;
 @class UICollectionViewFlowLayout;
 @class UICollectionView;
-@class UICollectionViewCell;
 @class UIImagePickerController;
-@class UIImage;
-@class UIGestureRecognizer;
 
 SWIFT_CLASS("_TtC20JFacebookPhotoPicker29PhotoCollectionViewController")
 @interface PhotoCollectionViewController : UICollectionViewController <PHPhotoLibraryChangeObserver, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
@@ -224,7 +233,6 @@ SWIFT_CLASS("_TtC20JFacebookPhotoPicker29PhotoCollectionViewController")
 - (void)switchToCamera;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (void)image:(UIImage * _Nonnull)image didFinishSavingWithError:(NSError * _Nullable * _Null_unspecified)error contextInfo:(void const * _Null_unspecified)contextInfo;
-- (void)showAlbumsList:(UIGestureRecognizer * _Nonnull)gestureRecognizer;
 - (void)switchAlbums;
 @end
 
@@ -290,6 +298,7 @@ SWIFT_CLASS("_TtC20JFacebookPhotoPicker26PhotoPreviewViewController")
 @property (nonatomic) NSInteger currentPage;
 @property (nonatomic, readonly, copy) NSString * _Nonnull cellIdentifier;
 - (void)viewDidLoad;
+- (void)eventCancel;
 - (void)onToolbarBackArrowClicked;
 - (void)onSelected:(BOOL)select;
 - (void)viewWillAppear:(BOOL)animated;
@@ -319,17 +328,30 @@ SWIFT_CLASS("_TtC20JFacebookPhotoPicker26PhotoPreviewViewController")
 - (UIImage * _Nonnull)resizeAndCropImage:(CGSize)toSize;
 @end
 
+@class NSMutableArray;
 
 SWIFT_CLASS("_TtC20JFacebookPhotoPicker14ViewController")
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collection_view;
 + (NSInteger)imageMaxSelectedNum;
 + (void)setImageMaxSelectedNum:(NSInteger)value;
 + (NSInteger)alreadySelectedImageNum;
 + (void)setAlreadySelectedImageNum:(NSInteger)value;
-- (IBAction)photoPickerClick:(id _Nonnull)sender;
-- (void)onImageSelectFinished:(NSArray<PHAsset *> * _Nonnull)images;
+@property (nonatomic, readonly) CGFloat screenWidth;
+@property (nonatomic, readonly) CGFloat screenHeight;
+@property (nonatomic, readonly, copy) NSString * _Nonnull idenContentString;
+@property (nonatomic, strong) NSMutableArray * _Nonnull images;
+@property (nonatomic) CGFloat cellHeight;
+@property (nonatomic) CGFloat cellWidth;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (IBAction)photoPickerClick:(id _Nonnull)sender;
+- (void)makeUICollectionView;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section;
+- (void)onImageSelectFinished:(NSArray<PHAsset *> * _Nonnull)images;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

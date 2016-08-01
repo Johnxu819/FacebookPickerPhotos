@@ -10,10 +10,10 @@ provides-member:
 - ["V20JFacebookPhotoPicker15PhotoImageModel", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "PhotoImageModel"
 - "PHAsset"
 - "=="
 - "ModelType"
+- "PhotoImageModel"
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "hashValue"]
 - !private ["Ps21BitwiseOperationsType", "hashValue"]

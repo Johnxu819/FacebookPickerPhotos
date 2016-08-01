@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4BCBB01D4F34FF00FA50A9 /* MCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4BCBAF1D4F34FF00FA50A9 /* MCollectionCell.swift */; };
 		0B86E6F51D0FDA5C00DF948B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86E6F41D0FDA5C00DF948B /* AppDelegate.swift */; };
 		0B86E6F71D0FDA5C00DF948B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86E6F61D0FDA5C00DF948B /* ViewController.swift */; };
 		0B86E6FA1D0FDA5C00DF948B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B86E6F81D0FDA5C00DF948B /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B4BCBAF1D4F34FF00FA50A9 /* MCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCollectionCell.swift; sourceTree = "<group>"; };
 		0B86E6F11D0FDA5C00DF948B /* JFacebookPhotoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFacebookPhotoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B86E6F41D0FDA5C00DF948B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B86E6F61D0FDA5C00DF948B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				0B86E6F41D0FDA5C00DF948B /* AppDelegate.swift */,
 				0B86E6F61D0FDA5C00DF948B /* ViewController.swift */,
+				0B4BCBAF1D4F34FF00FA50A9 /* MCollectionCell.swift */,
 				0B86E6F81D0FDA5C00DF948B /* Main.storyboard */,
 				0B86E6FB1D0FDA5C00DF948B /* Assets.xcassets */,
 				0B86E6FD1D0FDA5C00DF948B /* LaunchScreen.storyboard */,
@@ -373,6 +376,7 @@
 				0B86E6F71D0FDA5C00DF948B /* ViewController.swift in Sources */,
 				0B86E7531D0FE31D00DF948B /* PhotoImageModel.swift in Sources */,
 				0B86E74F1D0FDC5300DF948B /* AlbumToolbarView.swift in Sources */,
+				0B4BCBB01D4F34FF00FA50A9 /* MCollectionCell.swift in Sources */,
 				0B86E75D1D13D68A00DF948B /* PhotoImageManager.swift in Sources */,
 				0B86E74E1D0FDC5300DF948B /* UIImage+Extension.swift in Sources */,
 				0B86E7551D1152EF00DF948B /* PhotoAlbumsTableView.swift in Sources */,
